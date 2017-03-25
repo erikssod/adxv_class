@@ -7,6 +7,8 @@ class adxvsocket(object):
     
     Class provides one function per socket command for clarity.
     
+    Note that some of these functions require a beta release of adxv, but should work just fine for the stable release. 
+    
     See http://www.scripps.edu/tainer/arvai/adxv/AdxvUserManual.pdf for adxv manual. 
     '''   
     
