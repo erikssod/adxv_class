@@ -1,3 +1,11 @@
+"""
+Subscribes to a redis pub/sub server which feeds the app with the most 
+recent master and data files to be collected. Third field is oscillation/frame
+for calculating the equivalent # of frames for 1 degree of data. 
+"""
+
+
+
 #!/usr/bin/env python3.5
 import logging
 
@@ -27,7 +35,7 @@ import yaml
 import os
 
 # Load config file
-with open("/xray/progs/Python/applications/autoadxvload/adxv.yaml",'r') as yamlfile:
+with open("./adxv.yaml",'r') as yamlfile:
     cfg = yaml.safe_load(yamlfile)
     logger.debug('Config file: %s' % (cfg))
 
